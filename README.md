@@ -1,0 +1,1 @@
+# Patron-de-dise-o-Adapter
