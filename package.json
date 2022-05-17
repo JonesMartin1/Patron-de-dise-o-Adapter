@@ -202,8 +202,9 @@
     "yargs-parser": "^21.0.1"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
+  "test": "jest",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JonesMartin1/Patron-de-dise-o-Adapter.git"
