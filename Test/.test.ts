@@ -1,10 +1,10 @@
 //Cree un programa que puede adaptar la señal de un cable hdmi a un RCA y un programa que ocupa dos proveedores de correos distintos
 
-import {HDMI} from "../Archivos/HDMI"
-import {HDMIAdapter} from "../Archivos/HDMIAdapter"
-import { EmailProvider } from "../Archivos/Target";
-import { EmailProvider2 } from "../Archivos/Adaptee";
-import {EmailProvider2Adapter} from "../Archivos/Adapter"
+import {HDMI} from "../Hdmi/HDMI"
+import {HDMIAdapter} from "../HDMI/HDMIAdapter"
+import { EmailProvider } from "../emailer/Target";
+import { EmailProvider2 } from "../emailer/Adaptee";
+import {EmailProvider2Adapter} from "../emailer/Adapter"
 
 
 test('01_Cuando_obtenerVideohd_deberia_convertirse_en_video_Analogico', () => {

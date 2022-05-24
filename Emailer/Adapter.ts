@@ -1,4 +1,4 @@
-import {EmailProvider2} from "../Archivos/Adaptee"
+import {EmailProvider2} from "../Emailer/Adaptee"
 
 interface Emailer{
     enviar(): String;
