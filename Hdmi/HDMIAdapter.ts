@@ -2,9 +2,9 @@ import { HDMI } from "./HDMI";
 
 //Adaptador de clase (Adapter)
 export class HDMIAdapter implements RCA{
-    constructor(
-        private RCA: HDMI
-    ){}
+    constructor(private RCA: HDMI){
+        
+    }
     public obtenerCanalVideo(): string{
         this.RCA.obtenerVideoHd();
         return "Convertir fuente de video HD a Video analógico";

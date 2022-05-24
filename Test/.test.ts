@@ -19,25 +19,14 @@ test('02_Cuando_obtenerAudiohd_deberia_convertirse_en_Audio_Analogico', () => {
 });
 
 
+
 test('03_Cuando_enviar_se_ejecuta_En_EmailProvider_Funciona', () => {
-    const emailer = new EmailProvider;
+    const emailer = new EmailProvider();
     expect(emailer.enviar()).toBe("Enviar un mail por EmailProvider");
 });
 
-
-//No Funciona porque no está definido mandar Email en la interfaz, esta clase ocupa otra interfaz diferente al EmailProvider.
-test('04_Cuando_enviar_se_ejecuta_En_EmailProvider2_No_Funciona', () => {
-    const emailer = new EmailProvider2;
-    try{
-        emailer.mandarEmail();
-    }catch(e){
-
-    }
-});
-
-
 //Gracias al adapter ahora se puede usar el nuevo proveedor de correos con la interfaz deseada.
-test('05_Cuando_enviar_se_ejecuta_En_EmailProvider2Adapter_Funciona', () => {
+test('04_Cuando_enviar_se_ejecuta_En_EmailProvider2Adapter_Funciona', () => {
     const emailer = new EmailProvider2Adapter(new EmailProvider2);
     expect(emailer.enviar()).toBe("Enviar un mail por EmailProvider2");
 });

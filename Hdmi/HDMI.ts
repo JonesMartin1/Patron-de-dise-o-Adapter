@@ -1,5 +1,4 @@
 //Adaptee: La clase que se va a adaptar para que funcione bajo una nueva interfaz
-
 export class HDMI{
 
     public HDMI(){
